@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#boite {
+    position: relative;
+    top: 0; 
+    left: 0;    
+}
+
+#boite img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin:25px 5px;
+    background-size: cover;
+    background-color: #080808;
+    opacity: 0;
+}
+
+#boite img.active{
+    opacity: 1;
+}
+
+#boite ul {
+    position:relative;
+    z-index:1;
+    margin:auto;
+}
