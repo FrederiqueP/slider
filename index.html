@@ -7,37 +7,47 @@
 </head>
 
 <body>
-    <header>
-        <h1>Diaporama</h1>
+    <header class="Header">
+        <h1 class="Header-titre">Diaporama</h1>
     </header>
-  
-    <main class="projection" alt="diaporama">
+    
+    <main class="Projection" alt="diaporama">
 
         <button id="precedent"><i class="fa-solid fa-chevron-left"></i></button>
-
+         
         <div id="boite"> 
-            <ul>
-                <li><img class="active"src="images/image1.jpg" alt="mineral"></li> 
-                <li><img src="images/image2.jpg" alt="mineral"></li>
+            
+            <ul id="lesimages" >
+                <li class="gros"><img class="active"src="images/image1.jpg" alt="mineral"></li> 
+                <li ><img src="images/image2.jpg" alt="mineral"></li>
                 <li><img src="images/image3.jpg" alt="mineral"></li>
                 <li><img src="images/image4.jpg" alt="mineral"></li>
                 <li><img src="images/image5.jpg" alt="mineral"></li>
                 <li><img src="images/image6.jpg" alt="mineral"></li>
                 <li><img src="images/image7.jpg" alt="mineral"></li>
             </ul>
+           
+            <ul id="lespuces">
+                <li class="gros"><div class="puce"data-index = "0"></div></li> 
+                <li><div class="puce" data-index = "1"></div></li>
+                <li><div class="puce" data-index = "2"></div></li>
+                <li><div class="puce" data-index = "3"></div></li>
+                <li><div class="puce" data-index = "4"></div></li>
+                <li><div class="puce" data-index = "5"></div></li>
+                <li><div class="puce" data-index = "6"></div></li>
+            </ul>
+            
         </div>
-    
-        <button id="suivant"><i class="fa-solid fa-chevron-right"></i></button>
 
+        <button id="suivant"><i class="fa-solid fa-chevron-right"></i></button>  
+   
         <button id="play"><i class="fa-solid fa-play"></i></button>
         <button id="pause"><i class="fa-solid fa-pause"></i></button>
-        
     
-
     </main>
-
    
     <script src="https://kit.fontawesome.com/6336249732.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

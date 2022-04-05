@@ -3,21 +3,28 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header h1{
+   max-width: 1200px;
+   text-align: center;
+}
+
+.Projection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 #boite {
+    width: 800px;
+    height: 600px;
     position: relative;
-    top: 0; 
-    left: 0;    
 }
 
 #boite img{
+    width: 100%;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    margin:25px 5px;
-    background-size: cover;
-    background-color: #080808;
     opacity: 0;
 }
 
@@ -25,8 +32,30 @@ body{
     opacity: 1;
 }
 
-#boite ul {
-    position:relative;
-    z-index:1;
-    margin:auto;
+#boite ul#lesimages {
+    padding: 0;
+}
+
+#boite ul#lesimages li {
+    list-style-type: none;    
+}
+
+#boite ul#lespuces {
+    padding-top: 600px;
+}
+
+#boite ul#lespuces li{
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #080808;
+}
+
+#boite ul#lespuces li.gros{
+    list-style-type: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #080808;
 }
